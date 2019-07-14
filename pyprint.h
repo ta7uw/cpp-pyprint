@@ -1,6 +1,7 @@
 #pragma once
 
 #include<vector>
+#include<set>
 #include<iostream>
 
 using namespace std;
@@ -46,4 +47,17 @@ void print(vector<pair<T1, T2>> &pairVec) {
         if (i != len - 1) cout << "," << endl;
     }
     cout << "]" << endl;
+}
+
+template<typename T>
+void print(set<T> &s) {
+    long long len = s.size();
+    long long cnt = 0;
+    cout << "(";
+    for (auto it : s) {
+        cout << it;
+        if (cnt != len - 1) cout << ", ";
+        cnt++;
+    }
+    cout << ")" << endl;
 }
