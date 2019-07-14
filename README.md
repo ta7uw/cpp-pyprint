@@ -16,6 +16,12 @@ Debugging tool that outputs C ++ container as if using python's print() function
    
 If you have configured debugging in your environment, you can define an include as follows:
 
+CMakeLists.txt
+```
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -D__DEBUG")
+```
+
+main.cpp
 ```cpp
 #ifdef __DEBUG
 #include "cpp-pyprint/pyprint.h"
