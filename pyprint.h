@@ -4,13 +4,13 @@
 #include<iostream>
 
 using namespace std;
+typedef long long ll;
 
 template<typename T>
-
 void print(const vector<T> &v, bool endLine = true) {
-    int len = v.size();
+    ll len = v.size();
     cout << "[";
-    for (int i = 0; i < len; ++i) {
+    for (ll i = 0; i < len; ++i) {
         cout << v[i];
         if (i != len - 1) {
             cout << ", ";
@@ -28,9 +28,9 @@ void print(const pair<T1, T2> &p) {
 
 template<typename T>
 void print(const vector<vector<T>> &grid) {
-    int len = grid.size();
+    ll len = grid.size();
     cout << "[";
-    for (int i = 0; i < len; ++i) {
+    for (ll i = 0; i < len; ++i) {
         print(grid[i], false);
         if (i != len - 1) cout << "," << endl;
     }
