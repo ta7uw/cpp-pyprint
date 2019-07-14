@@ -32,6 +32,8 @@ main.cpp
 ### Use the print() function as follows
 
 #### vector<T>
+***
+
 ```cpp
 int main() {
     int N;
@@ -55,6 +57,7 @@ int main() {
 [9, 6, 3, 2, 5, 8, 7, 4]
 ```
 #### vector<vector<T>>
+***
 
 ```cpp
 int main() {
@@ -92,6 +95,7 @@ int main() {
 ```
 
 ### pair<T1, T2>
+***
 
 ```cpp
 int main() {
