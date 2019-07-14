@@ -4,10 +4,10 @@ Debugging tool that outputs C ++ container as if using python's print () functio
 ## How to use
 
 ### Add this repository to the same hierarchy as your source code  
-    `git clone https://github.com/ta7uw/cpp-pyprint.git`  
+    git clone https://github.com/ta7uw/cpp-pyprint.git  
 
 ### Include header file  
-    `#include "pyprint.h"`
+    #include "pyprint.h"
    
 
 ### Use the print () function as follows
