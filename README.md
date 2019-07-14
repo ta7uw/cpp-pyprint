@@ -1,4 +1,4 @@
-# pyprint
+# cpp-pyprint
 Debugging tool that outputs C ++ container as if using python's print() function
 
 ## Supported containers
@@ -9,10 +9,10 @@ Debugging tool that outputs C ++ container as if using python's print() function
 ## How to use
 
 ### Add this repository to the same hierarchy as your source code  
-    git clone https://github.com/ta7uw/pyprint.git  
+    git clone https://github.com/ta7uw/cpp-pyprint.git  
 
 ### Include header file  
-    #include "pyprint/pyprint.h"
+    #include "pyprint.h"
    
 If you have configured debugging in your environment, you can define an include as follows:
 
@@ -24,7 +24,7 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -D__DEBUG")
 main.cpp
 ```cpp
 #ifdef __DEBUG
-#include "pyprint/pyprint.h"
+#include "cpp-pyprint/pyprint.h"
 #endif
 ```
 
