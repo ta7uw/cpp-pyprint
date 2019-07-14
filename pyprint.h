@@ -8,9 +8,9 @@ typedef long long ll;
 
 template<typename T>
 void print(const vector<T> &v, bool endLine = true) {
-    ll len = v.size();
+    long long len = v.size();
     cout << "[";
-    for (ll i = 0; i < len; ++i) {
+    for (long long i = 0; i < len; ++i) {
         cout << v[i];
         if (i != len - 1) {
             cout << ", ";
@@ -28,9 +28,9 @@ void print(const pair<T1, T2> &p) {
 
 template<typename T>
 void print(const vector<vector<T>> &grid) {
-    ll len = grid.size();
+    long long len = grid.size();
     cout << "[";
-    for (ll i = 0; i < len; ++i) {
+    for (long long i = 0; i < len; ++i) {
         print(grid[i], false);
         if (i != len - 1) cout << "," << endl;
     }
