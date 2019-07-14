@@ -18,3 +18,8 @@ void print(const vector<T> &v) {
         }
     }
 }
+
+template<typename T1, typename T2>
+void print(const pair<T1, T2> &p) {
+     cout << "(" <<  p.first << ", " << p.second << ")" << endl;
+}
