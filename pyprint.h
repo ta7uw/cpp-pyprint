@@ -4,7 +4,6 @@
 #include<iostream>
 
 using namespace std;
-typedef long long ll;
 
 template<typename T>
 void print(const vector<T> &v, bool endLine = true) {
