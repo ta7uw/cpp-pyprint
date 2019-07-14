@@ -29,9 +29,9 @@ main.cpp
 ```
 
 
-### Use the print() function as follows
+## Use the print() function as follows
 
-#### vector<T>
+### `vector<T>`
 ***
 
 ```cpp
@@ -56,7 +56,8 @@ int main() {
 ```
 [9, 6, 3, 2, 5, 8, 7, 4]
 ```
-#### vector<vector<T>>
+
+### `vector<vector<T>>`
 ***
 
 ```cpp
@@ -94,7 +95,8 @@ int main() {
 [11, 12, 13, 14, 15]]
 ```
 
-### pair<T1, T2>
+### `pair<T1, T2>`
+
 ***
 
 ```cpp
