@@ -21,8 +21,9 @@ void print(const vector<T> &v, bool endLine = true) {
 }
 
 template<typename T1, typename T2>
-void print(const pair<T1, T2> &p) {
-    cout << "(" << p.first << ", " << p.second << ")" << endl;
+void print(const pair<T1, T2> &p, bool endLine = true) {
+    cout << "(" << p.first << ", " << p.second << ")";
+    if (endLine) cout << endl;
 }
 
 template<typename T>
@@ -31,6 +32,17 @@ void print(const vector<vector<T>> &grid) {
     cout << "[";
     for (long long i = 0; i < len; ++i) {
         print(grid[i], false);
+        if (i != len - 1) cout << "," << endl;
+    }
+    cout << "]" << endl;
+}
+
+template<typename T1, typename T2>
+void print(vector<pair<T1, T2>> &pairVec) {
+    long long len = pairVec.size();
+    cout << "[";
+    for (long long i = 0; i < len; ++i) {
+        print(pairVec[i], false);
         if (i != len - 1) cout << "," << endl;
     }
     cout << "]" << endl;
