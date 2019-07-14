@@ -13,6 +13,8 @@ void print(const vector<T> &v) {
         cout << v[i];
         if (i != len - 1) {
             cout << ", ";
+        }else{
+            cout << endl;
         }
     }
 }
