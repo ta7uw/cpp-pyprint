@@ -3,8 +3,8 @@ Debugging tool that outputs C ++ container as if using python's print() function
 
 ## Supported containers
 
-`vector<T>`, `pair<T1, T2>`, `vector<vector<T>>`, `vector<pair<T1, T2>>`,
-`set<T>`, `map<T1, T2>`, `unordered_map<T1, T2>`
+`vector<T>`, `pair<T1, T2>`, `vector<vector<T>>`, `vector<pair<T1, T2>>`,  
+`set<T>`, `map<T1, T2>`, `unordered_map<T1, T2>`, `vector<unordered_map<T1, T2>>`
 
 ## How to use
 
