@@ -12,7 +12,7 @@ Debugging tool that outputs C ++ container as if using python's print() function
     git clone https://github.com/ta7uw/cpp-pyprint.git  
 
 ### Include header file  
-    #include "pyprint.h"
+    #include "cpp-pyprint/pyprint.h"
    
 If you have configured debugging in your environment, you can define an include as follows:
 
