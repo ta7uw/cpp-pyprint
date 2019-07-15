@@ -11,6 +11,10 @@ using namespace std;
 template<typename T>
 void print(const vector<T> &v, bool endLine = true) {
     long long len = v.size();
+    if (len == 0) {
+        cout << "[ ]" << endl;
+        return;
+    }
     cout << "[";
     for (long long i = 0; i < len; ++i) {
         cout << v[i];
