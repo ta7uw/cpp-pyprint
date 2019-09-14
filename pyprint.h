@@ -94,11 +94,11 @@ void print(unordered_map<T1, T2> &dict) {
     cout << ")" << endl;
 }
 
-template <typename T1, typename T2>
+template<typename T1, typename T2>
 void print(vector<unordered_map<T1, T2>> &graph) {
     for (int i = 0; i < graph.size(); ++i) {
         for (int j = 0; j < graph[i].size(); ++j) {
-            cout << i << " -> "<< j <<": " << graph[i][j] << endl;
+            cout << i << " -> " << j << ": " << graph[i][j] << endl;
         }
     }
 }
