@@ -103,98 +103,152 @@ void print(vector<unordered_map<T1, T2>> &graph) {
     }
 }
 
-void print(const int t) {
-    cout << t << endl;
+void print(const int t, bool endLine = true) {
+    cout << t;
+    cout << (endLine ? "\n" : " ");
 }
 
-void print(const long t) {
-    cout << t << endl;
+void print(const long t, bool endLine = true) {
+    cout << t;
+    cout << (endLine ? "\n" : " ");
 }
 
-void print(const long long t) {
-    cout << t << endl;
+void print(const long long t, bool endLine = true) {
+    cout << t;
+    cout << (endLine ? "\n" : " ");
 }
 
-void print(const double t) {
-    cout << t << endl;
+void print(const double t, bool endLine = true) {
+    cout << t;
+    cout << (endLine ? "\n" : " ");
 }
 
-void print(const float t) {
-    cout << t << endl;
+void print(const float t, bool endLine = true) {
+    cout << t;
+    cout << (endLine ? "\n" : " ");
 }
 
-void print(const string &t) {
-    cout << t << endl;
+void print(const string &t, bool endLine = true) {
+    cout << t;
+    cout << (endLine ? "\n" : " ");
 }
 
-void print(const bool t) {
-    cout << (t ? "true" : "false") << endl;
+void print(const bool t, bool endLine = true) {
+    cout << (t ? "true" : "false");
+    cout << (endLine ? "\n" : " ");
 }
 
-void print(const char t) {
-    cout << t << endl;
+void print(const char t, bool endLine = true) {
+    cout << t;
+    cout << (endLine ? "\n" : " ");
 }
 
-void print(const char t[]) {
-    cout << t << endl;
+void print(const char t[], bool endLine = true) {
+    cout << t;
+    cout << (endLine ? "\n" : " ");
 }
 
 void print(const int t1, const int t2) {
-    cout << t1 << " " << t2 << endl;
+    print(t1, false);
+    print(t2, false);
+    cout << endl;
 }
 
 void print(const int t1, const int t2, const int t3) {
-    cout << t1 << " " << t2 << " " << t3 << endl;
+    print(t1, false);
+    print(t2, false);
+    print(t3, false);
+    cout << endl;
 }
 
 void print(const int t1, const int t2, const int t3, const int t4) {
-    cout << t1 << " " << t2 << " " << t3 << " " << t4 << endl;
+    print(t1, false);
+    print(t2, false);
+    print(t3, false);
+    print(t4, false);
+    cout << endl;
 }
 
 void print(const long long t1, const long long t2) {
-    cout << t1 << " " << t2 << endl;
+    print(t1, false);
+    print(t2, false);
+    cout << endl;
 }
 
 void print(const long long t1, const long long t2, const long long t3) {
-    cout << t1 << " " << t2 << " " << t3 << endl;
+    print(t1, false);
+    print(t2, false);
+    print(t3, false);
+    cout << endl;
 }
 
 void print(const long long t1, const long long t2, const long long t3, const long long t4) {
-    cout << t1 << " " << t2 << " " << t3 << " " << t4 << endl;
+    print(t1, false);
+    print(t2, false);
+    print(t3, false);
+    print(t4, false);
+    cout << endl;
 }
 
 void print(const double t1, const double t2) {
-    cout << t1 << " " << t2 << endl;
+    print(t1, false);
+    print(t2, false);
+    cout << endl;
 }
 
 void print(const double t1, const double t2, const double t3) {
-    cout << t1 << " " << t2 << " " << t3 << endl;
+    print(t1, false);
+    print(t2, false);
+    print(t3, false);
+    cout << endl;
 }
 
 void print(const double t1, const double t2, const double t3, const double t4) {
-    cout << t1 << " " << t2 << " " << t3 << " " << t4 << endl;
+    print(t1, false);
+    print(t2, false);
+    print(t3, false);
+    print(t4, false);
+    cout << endl;
 }
 
 void print(const float t1, const float t2) {
-    cout << t1 << " " << t2 << endl;
+    print(t1, false);
+    print(t2, false);
+    cout << endl;
 }
 
 void print(const float t1, const float t2, const float t3) {
-    cout << t1 << " " << t2 << " " << t3 << endl;
+    print(t1, false);
+    print(t2, false);
+    print(t3, false);
+    cout << endl;
 }
 
 void print(const float t1, const float t2, const float t3, const float t4) {
-    cout << t1 << " " << t2 << " " << t3 << " " << t4 << endl;
+    print(t1, false);
+    print(t2, false);
+    print(t3, false);
+    print(t4, false);
+    cout << endl;
 }
 
 void print(const string &t1, const string &t2) {
-    cout << t1 << " " << t2 << endl;
+    print(t1, false);
+    print(t2, false);
+    cout << endl;
 }
 
 void print(const string &t1, const string &t2, const string &t3) {
-    cout << t1 << " " << t2 << " " << t3 << endl;
+    print(t1, false);
+    print(t2, false);
+    print(t3, false);
+    cout << endl;
 }
 
 void print(const string &t1, const string &t2, const string &t3, const string &t4) {
-    cout << t1 << " " << t2 << " " << t3 << " " << t4 << endl;
+    print(t1, false);
+    print(t2, false);
+    print(t3, false);
+    print(t4, false);
+    cout << endl;
 }
