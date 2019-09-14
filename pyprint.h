@@ -174,3 +174,15 @@ void print(const double t1, const double t2, const double t3) {
 void print(const double t1, const double t2, const double t3, const double t4) {
     cout << t1 << " " << t2 << " " << t3 << " " << t4 << endl;
 }
+
+void print(const float t1, const float t2) {
+    cout << t1 << " " << t2 << endl;
+}
+
+void print(const float t1, const float t2, const float t3) {
+    cout << t1 << " " << t2 << " " << t3 << endl;
+}
+
+void print(const float t1, const float t2, const float t3, const float t4) {
+    cout << t1 << " " << t2 << " " << t3 << " " << t4 << endl;
+}
