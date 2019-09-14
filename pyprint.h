@@ -122,3 +122,7 @@ void print(const double t) {
 void print(const float t) {
     cout << t << endl;
 }
+
+void print(const string &t) {
+    cout << t << endl;
+}
