@@ -130,3 +130,11 @@ void print(const string &t) {
 void print(const bool t) {
     cout << (t ? "true" : "false") << endl;
 }
+
+void print(const char t) {
+    cout << t << endl;
+}
+
+void print(const char t[]) {
+    cout << t << endl;
+}
