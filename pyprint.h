@@ -126,3 +126,7 @@ void print(const float t) {
 void print(const string &t) {
     cout << t << endl;
 }
+
+void print(const bool t) {
+    cout << (t ? "true" : "false") << endl;
+}
