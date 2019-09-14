@@ -102,3 +102,23 @@ void print(vector<unordered_map<T1, T2>> &graph) {
         }
     }
 }
+
+void print(const int t) {
+    cout << t << endl;
+}
+
+void print(const long t) {
+    cout << t << endl;
+}
+
+void print(const long long t) {
+    cout << t << endl;
+}
+
+void print(const double t) {
+    cout << t << endl;
+}
+
+void print(const float t) {
+    cout << t << endl;
+}
