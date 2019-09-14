@@ -138,3 +138,15 @@ void print(const char t) {
 void print(const char t[]) {
     cout << t << endl;
 }
+
+void print(const int t1, const int t2) {
+    cout << t1 << " " << t2 << endl;
+}
+
+void print(const int t1, const int t2, const int t3) {
+    cout << t1 << " " << t2 << " " << t3 << endl;
+}
+
+void print(const int t1, const int t2, const int t3, const int t4) {
+    cout << t1 << " " << t2 << " " << t3 << " " << t4 << endl;
+}
