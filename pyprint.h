@@ -6,159 +6,158 @@
 #include<unordered_map>
 #include<iostream>
 
-using namespace std;
 
 template<typename T>
-void print(const vector<T> &v, bool endLine = true) {
+void print(const std::vector<T> &v, bool endLine = true) {
     long long len = v.size();
     if (len == 0) {
-        cout << "[ ]" << endl;
+        std::cout << "[ ]" << std::endl;
         return;
     }
-    cout << "[";
+    std::cout << "[";
     for (long long i = 0; i < len; ++i) {
-        cout << v[i];
+        std::cout << v[i];
         if (i != len - 1) {
-            cout << ", ";
+            std::cout << ", ";
         } else {
-            cout << "]";
-            if (endLine) cout << endl;
+            std::cout << "]";
+            if (endLine) std::cout << std::endl;
         }
     }
 }
 
 template<typename T1, typename T2>
-void print(const pair<T1, T2> &p, bool endLine = true) {
-    cout << "(" << p.first << ", " << p.second << ")";
-    if (endLine) cout << endl;
+void print(const std::pair<T1, T2> &p, bool endLine = true) {
+    std::cout << "(" << p.first << ", " << p.second << ")";
+    if (endLine) std::cout << std::endl;
 }
 
 template<typename T>
-void print(const vector<vector<T>> &grid) {
+void print(const std::vector<std::vector<T>> &grid) {
     long long len = grid.size();
-    cout << "[";
+    std::cout << "[";
     for (long long i = 0; i < len; ++i) {
         print(grid[i], false);
-        if (i != len - 1) cout << "," << endl;
+        if (i != len - 1) std::cout << "," << std::endl;
     }
-    cout << "]" << endl;
+    std::cout << "]" << std::endl;
 }
 
 template<typename T1, typename T2>
-void print(vector<pair<T1, T2>> &pairVec) {
+void print(std::vector<std::pair<T1, T2>> &pairVec) {
     long long len = pairVec.size();
-    cout << "[";
+    std::cout << "[";
     for (long long i = 0; i < len; ++i) {
         print(pairVec[i], false);
-        if (i != len - 1) cout << "," << endl;
+        if (i != len - 1) std::cout << "," << std::endl;
     }
-    cout << "]" << endl;
+    std::cout << "]" << std::endl;
 }
 
 template<typename T>
-void print(set<T> &s) {
+void print(std::set<T> &s) {
     long long len = s.size();
     long long cnt = 0;
-    cout << "(";
+    std::cout << "(";
     for (auto it : s) {
-        cout << it;
-        if (cnt != len - 1) cout << ", ";
+        std::cout << it;
+        if (cnt != len - 1) std::cout << ", ";
         cnt++;
     }
-    cout << ")" << endl;
+    std::cout << ")" << std::endl;
 }
 
 template<typename T1, typename T2>
-void print(map<T1, T2> &dict) {
+void print(std::map<T1, T2> &dict) {
     long long len = dict.size();
     long long cnt = 0;
-    cout << "(";
+    std::cout << "(";
     for (auto it = dict.begin(); it != dict.end(); ++it) {
-        cout << it->first << ": " << it->second;
-        if (cnt != len - 1) cout << ", ";
+        std::cout << it->first << ": " << it->second;
+        if (cnt != len - 1) std::cout << ", ";
         cnt++;
     }
-    cout << ")" << endl;
+    std::cout << ")" << std::endl;
 }
 
 template<typename T1, typename T2>
-void print(unordered_map<T1, T2> &dict) {
+void print(std::unordered_map<T1, T2> &dict) {
     long long len = dict.size();
     long long cnt = 0;
-    cout << "(";
+    std::cout << "(";
     for (auto p: dict) {
-        cout << p.first << ": " << p.second;
-        if (cnt != len - 1) cout << ", ";
+        std::cout << p.first << ": " << p.second;
+        if (cnt != len - 1) std::cout << ", ";
         cnt++;
     }
-    cout << ")" << endl;
+    std::cout << ")" << std::endl;
 }
 
 template<typename T1, typename T2>
-void print(vector<unordered_map<T1, T2>> &graph) {
+void print(std::vector<std::unordered_map<T1, T2>> &graph) {
     for (int i = 0; i < graph.size(); ++i) {
         for (int j = 0; j < graph[i].size(); ++j) {
-            cout << i << " -> " << j << ": " << graph[i][j] << endl;
+            std::cout << i << " -> " << j << ": " << graph[i][j] << std::endl;
         }
     }
 }
 
 void print(const int t, bool endLine = true) {
-    cout << t;
-    cout << (endLine ? "\n" : " ");
+    std::cout << t;
+    std::cout << (endLine ? "\n" : " ");
 }
 
 void print(const long t, bool endLine = true) {
-    cout << t;
-    cout << (endLine ? "\n" : " ");
+    std::cout << t;
+    std::cout << (endLine ? "\n" : " ");
 }
 
 void print(const long long t, bool endLine = true) {
-    cout << t;
-    cout << (endLine ? "\n" : " ");
+    std::cout << t;
+    std::cout << (endLine ? "\n" : " ");
 }
 
 void print(const double t, bool endLine = true) {
-    cout << t;
-    cout << (endLine ? "\n" : " ");
+    std::cout << t;
+    std::cout << (endLine ? "\n" : " ");
 }
 
 void print(const float t, bool endLine = true) {
-    cout << t;
-    cout << (endLine ? "\n" : " ");
+    std::cout << t;
+    std::cout << (endLine ? "\n" : " ");
 }
 
-void print(const string &t, bool endLine = true) {
-    cout << t;
-    cout << (endLine ? "\n" : " ");
+void print(const std::string &t, bool endLine = true) {
+    std::cout << t;
+    std::cout << (endLine ? "\n" : " ");
 }
 
 void print(const bool t, bool endLine = true) {
-    cout << (t ? "true" : "false");
-    cout << (endLine ? "\n" : " ");
+    std::cout << (t ? "true" : "false");
+    std::cout << (endLine ? "\n" : " ");
 }
 
 void print(const char t, bool endLine = true) {
-    cout << t;
-    cout << (endLine ? "\n" : " ");
+    std::cout << t;
+    std::cout << (endLine ? "\n" : " ");
 }
 
 void print(const char t[], bool endLine = true) {
-    cout << t;
-    cout << (endLine ? "\n" : " ");
+    std::cout << t;
+    std::cout << (endLine ? "\n" : " ");
 }
 
 void print(const int t1, const int t2) {
     print(t1, false);
     print(t2, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
 void print(const int t1, const int t2, const int t3) {
     print(t1, false);
     print(t2, false);
     print(t3, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
 void print(const int t1, const int t2, const int t3, const int t4) {
@@ -166,20 +165,20 @@ void print(const int t1, const int t2, const int t3, const int t4) {
     print(t2, false);
     print(t3, false);
     print(t4, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
 void print(const long long t1, const long long t2) {
     print(t1, false);
     print(t2, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
 void print(const long long t1, const long long t2, const long long t3) {
     print(t1, false);
     print(t2, false);
     print(t3, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
 void print(const long long t1, const long long t2, const long long t3, const long long t4) {
@@ -187,20 +186,20 @@ void print(const long long t1, const long long t2, const long long t3, const lon
     print(t2, false);
     print(t3, false);
     print(t4, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
 void print(const double t1, const double t2) {
     print(t1, false);
     print(t2, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
 void print(const double t1, const double t2, const double t3) {
     print(t1, false);
     print(t2, false);
     print(t3, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
 void print(const double t1, const double t2, const double t3, const double t4) {
@@ -208,20 +207,20 @@ void print(const double t1, const double t2, const double t3, const double t4) {
     print(t2, false);
     print(t3, false);
     print(t4, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
 void print(const float t1, const float t2) {
     print(t1, false);
     print(t2, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
 void print(const float t1, const float t2, const float t3) {
     print(t1, false);
     print(t2, false);
     print(t3, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
 void print(const float t1, const float t2, const float t3, const float t4) {
@@ -229,26 +228,26 @@ void print(const float t1, const float t2, const float t3, const float t4) {
     print(t2, false);
     print(t3, false);
     print(t4, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
-void print(const string &t1, const string &t2) {
+void print(const std::string &t1, const std::string &t2) {
     print(t1, false);
     print(t2, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
-void print(const string &t1, const string &t2, const string &t3) {
+void print(const std::string &t1, const std::string &t2, const std::string &t3) {
     print(t1, false);
     print(t2, false);
     print(t3, false);
-    cout << endl;
+    std::cout << std::endl;
 }
 
-void print(const string &t1, const string &t2, const string &t3, const string &t4) {
+void print(const std::string &t1, const std::string &t2, const std::string &t3, const std::string &t4) {
     print(t1, false);
     print(t2, false);
     print(t3, false);
     print(t4, false);
-    cout << endl;
+    std::cout << std::endl;
 }
