@@ -52,6 +52,7 @@ std::ostream &operator<<(std::ostream &os, const std::set<T> &s) {
         cnt++;
     }
     std::cout << ")";
+    return os;
 }
 
 template<typename T>
@@ -65,6 +66,7 @@ std::ostream &operator<<(std::ostream &os, const std::unordered_set<T> &s) {
         cnt++;
     }
     std::cout << ")";
+    return os;
 }
 
 template<typename T1, typename T2>
@@ -78,6 +80,7 @@ std::ostream &operator<<(std::ostream &os, std::map<T1, T2> &mp) {
         cnt++;
     }
     std::cout << ")";
+    return os;
 }
 
 template<typename T1, typename T2>
@@ -91,5 +94,6 @@ std::ostream &operator<<(std::ostream &os, std::unordered_map<T1, T2> &mp) {
         cnt++;
     }
     std::cout << ")";
+    return os;
 }
 
